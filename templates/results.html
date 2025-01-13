@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <h2>Hypotheses:</h2>
+    <ul>
+        {% for hypothesis in hypotheses %}
+            <li>{{ hypothesis }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Suggestions:</h2>
+    <ul>
+        {% for suggestion in suggestions %}
+            <li>{{ suggestion }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Upload new files</a>
+</body>
+</html>
