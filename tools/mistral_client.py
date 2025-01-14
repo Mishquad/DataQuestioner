@@ -4,7 +4,7 @@ from mistralai import Mistral
 class MistralWrapper:
     def __init__(self, api_key=None):
         # Use API key from the environment if not explicitly provided
-        self.api_key = '1TNjHnTyCxWE0K4zUfNyeGt1oMYSDCPV' #api_key or os.getenv("MISTRAL_API_KEY")
+        self.api_key = '1' #api_key or os.getenv("MISTRAL_API_KEY")
         if not self.api_key:
             raise ValueError("Mistral API key is required. Set it in the environment or pass it explicitly.")
         self.client = Mistral(api_key=self.api_key)
