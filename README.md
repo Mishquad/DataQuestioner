@@ -5,6 +5,7 @@ LLM-based system for automated business data analysis, hypothesis generation, an
 Core idea is to regularly check for data-drift (whatever that means)
 
 as a data example I took [coffeshop daily transactions data from kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset)
+
 ---
 
 ## Table of Contents
@@ -74,15 +75,19 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 
 ### Diagrams
 ---
+
 ![user](./imgs/user_story.png)
+
 ---
 ![comp](./imgs/components.png)
 
 
 ### Examples
 ![UI](./imgs/ui.png)
+
 ---
 ![first](./imgs/agents1.png)
+
 ---
 ![second](./imgs/agents2.png)
 
