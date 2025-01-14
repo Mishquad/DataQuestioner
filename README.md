@@ -14,7 +14,9 @@ as a data example I took [coffeshop daily transactions data from kaggle](https:/
 2. Installation
 3. Usage
 4. CI/CD Pipeline
-
+5. Diagrams (user-story and architecture)
+6. Examples of input / output
+7. Author
 
 ---
 
