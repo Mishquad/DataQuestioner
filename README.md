@@ -11,8 +11,7 @@ A modular system for automated business data analysis, hypothesis generation, an
 2. Installation
 3. Usage
 4. CI/CD Pipeline
-5. Contributing
-6. License
+
 
 ---
 
@@ -50,3 +49,10 @@ A modular system for automated business data analysis, hypothesis generation, an
    ```bash
    git clone https://github.com/yourusername/your-repository.git
    cd your-repository
+
+2. install dependecies
+```python pip install -r requirements.txt```
+
+3. set up Mistral API
+```MISTRAL_API_KEY=your_api_key```
+
