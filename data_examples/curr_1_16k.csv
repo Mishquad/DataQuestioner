@@ -1,0 +1,101 @@
+transaction_time,transaction_qty,store_id,store_location,product_id,unit_price,product_category,product_type,product_detail
+07:07:09,2,5,Lower Manhattan,59,4.5,Drinking Chocolate,Hot chocolate,Dark chocolate Lg
+07:09:09,1,5,Lower Manhattan,49,3.0,Tea,Brewed Black tea,English Breakfast Lg
+07:15:02,1,5,Lower Manhattan,34,2.45,Coffee,Premium brewed coffee,Jamaican Coffee River Sm
+07:18:04,1,5,Lower Manhattan,44,2.5,Tea,Brewed herbal tea,Peppermint Rg
+07:22:41,1,5,Lower Manhattan,40,3.75,Coffee,Barista Espresso,Cappuccino
+07:24:20,1,5,Lower Manhattan,53,3.0,Tea,Brewed Chai tea,Traditional Blend Chai Lg
+07:25:39,2,5,Lower Manhattan,47,3.0,Tea,Brewed Green tea,Serenity Green Tea Lg
+07:27:26,2,5,Lower Manhattan,53,3.0,Tea,Brewed Chai tea,Traditional Blend Chai Lg
+07:32:03,2,5,Lower Manhattan,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+07:41:18,2,5,Lower Manhattan,34,2.45,Coffee,Premium brewed coffee,Jamaican Coffee River Sm
+07:45:51,1,5,Lower Manhattan,51,3.0,Tea,Brewed Black tea,Earl Grey Lg
+07:46:28,2,5,Lower Manhattan,24,3.0,Coffee,Drip coffee,Our Old Time Diner Blend Lg
+07:46:28,1,5,Lower Manhattan,72,3.25,Bakery,Scone,Ginger Scone
+07:49:41,2,5,Lower Manhattan,50,2.5,Tea,Brewed Black tea,Earl Grey Rg
+07:51:55,2,5,Lower Manhattan,25,2.2,Coffee,Organic brewed coffee,Brazilian Sm
+07:52:17,2,5,Lower Manhattan,34,2.45,Coffee,Premium brewed coffee,Jamaican Coffee River Sm
+07:52:36,2,5,Lower Manhattan,87,3.0,Coffee,Barista Espresso,Ouro Brasileiro shot
+07:53:55,1,5,Lower Manhattan,25,2.2,Coffee,Organic brewed coffee,Brazilian Sm
+08:00:35,1,5,Lower Manhattan,36,3.75,Coffee,Premium brewed coffee,Jamaican Coffee River Lg
+08:00:35,1,5,Lower Manhattan,77,3.0,Bakery,Scone,Oatmeal Scone
+08:13:31,2,5,Lower Manhattan,54,2.5,Tea,Brewed Chai tea,Morning Sunrise Chai Rg
+08:18:52,1,5,Lower Manhattan,51,3.0,Tea,Brewed Black tea,Earl Grey Lg
+08:24:26,2,5,Lower Manhattan,56,2.55,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg
+08:24:26,1,5,Lower Manhattan,69,3.25,Bakery,Biscotti,Hazelnut Biscotti
+08:26:08,1,8,Hell's Kitchen,44,2.5,Tea,Brewed herbal tea,Peppermint Rg
+08:26:08,1,8,Hell's Kitchen,74,3.5,Bakery,Biscotti,Ginger Biscotti
+08:29:38,1,8,Hell's Kitchen,56,2.55,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg
+08:29:51,2,5,Lower Manhattan,32,3.0,Coffee,Gourmet brewed coffee,Ethiopia Rg
+08:31:56,1,8,Hell's Kitchen,57,3.1,Tea,Brewed Chai tea,Spicy Eye Opener Chai Lg
+08:32:01,2,8,Hell's Kitchen,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+08:32:31,1,8,Hell's Kitchen,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+08:33:04,2,8,Hell's Kitchen,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+08:33:08,1,5,Lower Manhattan,43,3.0,Tea,Brewed herbal tea,Lemon Grass Lg
+08:33:08,1,5,Lower Manhattan,76,3.5,Bakery,Biscotti,Chocolate Chip Biscotti
+08:35:03,2,5,Lower Manhattan,45,3.0,Tea,Brewed herbal tea,Peppermint Lg
+08:35:03,1,5,Lower Manhattan,71,3.75,Bakery,Pastry,Chocolate Croissant
+08:41:23,1,8,Hell's Kitchen,39,4.25,Coffee,Barista Espresso,Latte Rg
+08:41:23,1,8,Hell's Kitchen,75,3.5,Bakery,Pastry,Croissant
+08:44:31,1,8,Hell's Kitchen,54,2.5,Tea,Brewed Chai tea,Morning Sunrise Chai Rg
+08:46:53,1,8,Hell's Kitchen,24,3.0,Coffee,Drip coffee,Our Old Time Diner Blend Lg
+08:51:38,2,5,Lower Manhattan,57,3.1,Tea,Brewed Chai tea,Spicy Eye Opener Chai Lg
+08:52:32,1,5,Lower Manhattan,26,3.0,Coffee,Organic brewed coffee,Brazilian Rg
+08:54:33,2,5,Lower Manhattan,27,3.5,Coffee,Organic brewed coffee,Brazilian Lg
+08:56:33,1,5,Lower Manhattan,50,2.5,Tea,Brewed Black tea,Earl Grey Rg
+08:59:35,2,8,Hell's Kitchen,47,3.0,Tea,Brewed Green tea,Serenity Green Tea Lg
+09:10:56,1,5,Lower Manhattan,54,2.5,Tea,Brewed Chai tea,Morning Sunrise Chai Rg
+09:11:06,1,5,Lower Manhattan,56,2.55,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg
+09:11:06,1,5,Lower Manhattan,77,3.0,Bakery,Scone,Oatmeal Scone
+09:13:01,1,5,Lower Manhattan,44,2.5,Tea,Brewed herbal tea,Peppermint Rg
+09:13:15,2,5,Lower Manhattan,56,2.55,Tea,Brewed Chai tea,Spicy Eye Opener Chai Rg
+09:14:16,1,5,Lower Manhattan,48,2.5,Tea,Brewed Black tea,English Breakfast Rg
+09:14:25,1,8,Hell's Kitchen,46,2.5,Tea,Brewed Green tea,Serenity Green Tea Rg
+09:14:41,1,8,Hell's Kitchen,32,3.0,Coffee,Gourmet brewed coffee,Ethiopia Rg
+09:16:51,1,5,Lower Manhattan,54,2.5,Tea,Brewed Chai tea,Morning Sunrise Chai Rg
+09:19:21,2,5,Lower Manhattan,25,2.2,Coffee,Organic brewed coffee,Brazilian Sm
+09:19:26,1,8,Hell's Kitchen,59,4.5,Drinking Chocolate,Hot chocolate,Dark chocolate Lg
+09:20:36,2,5,Lower Manhattan,37,3.0,Coffee,Barista Espresso,Espresso shot
+09:23:33,1,5,Lower Manhattan,60,3.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Rg
+09:26:43,2,8,Hell's Kitchen,34,2.45,Coffee,Premium brewed coffee,Jamaican Coffee River Sm
+09:37:37,1,5,Lower Manhattan,37,3.0,Coffee,Barista Espresso,Espresso shot
+09:40:46,1,5,Lower Manhattan,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+09:41:24,1,5,Lower Manhattan,55,4.0,Tea,Brewed Chai tea,Morning Sunrise Chai Lg
+09:41:37,1,5,Lower Manhattan,34,2.45,Coffee,Premium brewed coffee,Jamaican Coffee River Sm
+09:44:46,1,5,Lower Manhattan,24,3.0,Coffee,Drip coffee,Our Old Time Diner Blend Lg
+09:46:46,2,5,Lower Manhattan,37,3.0,Coffee,Barista Espresso,Espresso shot
+09:47:40,2,8,Hell's Kitchen,40,3.75,Coffee,Barista Espresso,Cappuccino
+09:48:03,1,8,Hell's Kitchen,30,3.0,Coffee,Gourmet brewed coffee,Columbian Medium Roast Lg
+09:50:44,2,5,Lower Manhattan,37,3.0,Coffee,Barista Espresso,Espresso shot
+09:50:44,1,5,Lower Manhattan,69,3.25,Bakery,Biscotti,Hazelnut Biscotti
+09:53:28,1,8,Hell's Kitchen,47,3.0,Tea,Brewed Green tea,Serenity Green Tea Lg
+09:53:44,2,8,Hell's Kitchen,40,3.75,Coffee,Barista Espresso,Cappuccino
+09:53:44,1,8,Hell's Kitchen,72,3.25,Bakery,Scone,Ginger Scone
+09:55:02,1,5,Lower Manhattan,60,3.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Rg
+09:55:02,1,5,Lower Manhattan,70,3.25,Bakery,Scone,Cranberry Scone
+10:00:03,1,8,Hell's Kitchen,35,3.1,Coffee,Premium brewed coffee,Jamaican Coffee River Rg
+10:00:39,2,8,Hell's Kitchen,32,3.0,Coffee,Gourmet brewed coffee,Ethiopia Rg
+10:01:49,1,8,Hell's Kitchen,49,3.0,Tea,Brewed Black tea,English Breakfast Lg
+10:03:55,2,8,Hell's Kitchen,36,3.75,Coffee,Premium brewed coffee,Jamaican Coffee River Lg
+10:05:01,2,5,Lower Manhattan,61,4.75,Drinking Chocolate,Hot chocolate,Sustainably Grown Organic Lg
+10:09:04,2,8,Hell's Kitchen,27,3.5,Coffee,Organic brewed coffee,Brazilian Lg
+10:09:04,1,8,Hell's Kitchen,71,3.75,Bakery,Pastry,Chocolate Croissant
+10:13:58,1,5,Lower Manhattan,53,3.0,Tea,Brewed Chai tea,Traditional Blend Chai Lg
+10:14:49,1,5,Lower Manhattan,26,3.0,Coffee,Organic brewed coffee,Brazilian Rg
+10:14:49,1,5,Lower Manhattan,71,3.75,Bakery,Pastry,Chocolate Croissant
+10:18:14,2,8,Hell's Kitchen,41,4.25,Coffee,Barista Espresso,Cappuccino Lg
+10:18:21,2,8,Hell's Kitchen,33,3.5,Coffee,Gourmet brewed coffee,Ethiopia Lg
+10:18:52,2,5,Lower Manhattan,25,2.2,Coffee,Organic brewed coffee,Brazilian Sm
+10:19:42,2,5,Lower Manhattan,23,2.5,Coffee,Drip coffee,Our Old Time Diner Blend Rg
+10:22:06,1,5,Lower Manhattan,22,2.0,Coffee,Drip coffee,Our Old Time Diner Blend Sm
+10:22:06,1,5,Lower Manhattan,77,3.0,Bakery,Scone,Oatmeal Scone
+10:23:01,2,8,Hell's Kitchen,48,2.5,Tea,Brewed Black tea,English Breakfast Rg
+10:24:35,1,8,Hell's Kitchen,55,4.0,Tea,Brewed Chai tea,Morning Sunrise Chai Lg
+10:35:05,2,8,Hell's Kitchen,41,4.25,Coffee,Barista Espresso,Cappuccino Lg
+10:35:40,1,5,Lower Manhattan,39,4.25,Coffee,Barista Espresso,Latte Rg
+10:41:38,2,8,Hell's Kitchen,46,2.5,Tea,Brewed Green tea,Serenity Green Tea Rg
+10:46:20,1,8,Hell's Kitchen,52,2.5,Tea,Brewed Chai tea,Traditional Blend Chai Rg
+10:49:13,2,8,Hell's Kitchen,51,3.0,Tea,Brewed Black tea,Earl Grey Lg
+10:59:37,1,8,Hell's Kitchen,48,2.5,Tea,Brewed Black tea,English Breakfast Rg
+11:03:25,2,5,Lower Manhattan,47,3.0,Tea,Brewed Green tea,Serenity Green Tea Lg
+11:03:25,1,5,Lower Manhattan,75,3.5,Bakery,Pastry,Croissant
