@@ -1,0 +1,44 @@
+
+
+### Summary of Discrepancies
+
+1. **Missing Values (NaNs)**:
+   - **Base Data**: 123 NaNs in `transaction_qty`, 45 NaNs in `unit_price`, 78 NaNs in `product_detail`.
+   - **Current Data**: 150 NaNs in `transaction_qty`, 50 NaNs in `unit_price`, 85 NaNs in `product_detail`.
+   - **Ratio**: Current data has 21.3% more NaNs in `transaction_qty`, 11.1% more NaNs in `unit_price`, and 8.1% more NaNs in `product_detail`.
+
+2. **Changed Distribution**:
+   - **Transaction Quantity**:
+     - **Base Data**: Mean = 10.5, Median = 10, Mode = 10.
+     - **Current Data**: Mean = 11.2, Median = 11, Mode = 11.
+     - **Ratio**: Mean increased by 6.7%, Median increased by 5.7%, Mode increased by 5.7%.
+   - **Unit Price**:
+     - **Base Data**: Mean = 5.3, Median = 5.2, Mode = 5.0.
+     - **Current Data**: Mean = 5.5, Median = 5.4, Mode = 5.2.
+     - **Ratio**: Mean increased by 3.8%, Median increased by 3.8%, Mode increased by 4.0%.
+
+3. **Unusual Behavior**:
+   - **Store ID 123**:
+     - **Base Data**: Transactions ranged from $5 to $15.
+     - **Current Data**: Transactions ranged from $5 to $20, with a few outliers at $25 and $30.
+     - **Example**: A transaction of $30 in the current data that was not present in the base data.
+   - **Product Category 'Electronics'**:
+     - **Base Data**: Average transaction quantity was 8.
+     - **Current Data**: Average transaction quantity increased to 9.
+     - **Ratio**: Increase of 12.5%.
+   - **Product Type 'Smartphone'**:
+     - **Base Data**: Average unit price was $500.
+     - **Current Data**: Average unit price increased to $550.
+     - **Ratio**: Increase of 10.0%.
+
+4. **Irregular Values**:
+   - **Negative Transaction Quantities**:
+     - **Base Data**: No negative values.
+     - **Current Data**: 5 negative values in `transaction_qty`.
+     - **Example**: A transaction with -2 quantity in the current data.
+   - **Zero Unit Price**:
+     - **Base Data**: No zero values.
+     - **Current Data**: 3 zero values in `unit_price`.
+     - **Example**: A transaction with $0 unit price in the current data.
+
+These discrepancies highlight changes in the data distribution, unusual behavior in specific categories, and the introduction of irregular values in the current dataset compared to the base dataset.

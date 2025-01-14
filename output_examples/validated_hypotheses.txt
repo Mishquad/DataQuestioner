@@ -1,0 +1,19 @@
+
+
+### Validation of Hypotheses
+
+1. **Data Collection Method Change**:
+   - **Validation**: The increase in NaNs and irregular values supports the hypothesis that the data collection method has changed. The new method might be more prone to errors or missing data.
+
+2. **Market Trends**:
+   - **Validation**: The increased transaction quantities and unit prices, especially in specific categories like 'Electronics' and 'Smartphone', indicate market trends or changes in consumer behavior.
+
+3. **Data Entry Errors**:
+   - **Validation**: The presence of negative transaction quantities and zero unit prices supports the hypothesis that data entry errors are more frequent in the current data collection process.
+
+4. **Outliers**:
+   - **Validation**: The appearance of outliers, such as the $30 transaction at Store ID 123, supports the hypothesis that these outliers could be due to special promotions, bulk purchases, or other exceptional events that were not present in the base data.
+
+### Conclusion
+
+The data analysis results validate the hypotheses about changes in data collection methods, market trends, data entry errors, and the presence of outliers. The discrepancies identified in the current dataset align with the proposed hypotheses, providing insights into the changes and anomalies in the data.

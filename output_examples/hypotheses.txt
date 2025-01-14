@@ -1,0 +1,32 @@
+
+
+### Hypotheses
+
+1. **Data Collection Method Change**:
+   - The increase in NaNs and irregular values suggests a change in the data collection method. The new method might be more prone to errors or missing data.
+
+2. **Market Trends**:
+   - The increased transaction quantities and unit prices, especially in specific categories like 'Electronics' and 'Smartphone', could indicate market trends or changes in consumer behavior.
+
+3. **Data Entry Errors**:
+   - The presence of negative transaction quantities and zero unit prices could be due to data entry errors. These errors might be more frequent in the current data collection process.
+
+4. **Outliers**:
+   - The appearance of outliers, such as the $30 transaction at Store ID 123, could be due to special promotions, bulk purchases, or other exceptional events that were not present in the base data.
+
+### Suggestions
+
+1. **Data Cleaning**:
+   - Implement robust data cleaning procedures to handle NaNs, negative values, and zero unit prices. This could include imputation methods, outlier detection, and validation checks.
+
+2. **Monitoring and Alerts**:
+   - Set up monitoring systems to detect and alert on significant changes in data distribution, such as the increase in transaction quantities and unit prices. This can help in identifying market trends or anomalies early.
+
+3. **Data Quality Assurance**:
+   - Enhance data quality assurance processes to reduce data entry errors. This could include training for data collectors, automated validation checks, and regular audits.
+
+4. **Investigate Outliers**:
+   - Investigate the outliers to understand their causes. This could involve reviewing special promotions, bulk purchases, or other exceptional events that might have contributed to these outliers.
+
+5. **Regular Data Audits**:
+   - Conduct regular data audits to compare the current data with historical data. This can help in identifying trends, anomalies, and changes in data collection methods.
