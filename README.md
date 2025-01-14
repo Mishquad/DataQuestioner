@@ -4,6 +4,7 @@
 LLM-based system for automated business data analysis, hypothesis generation, and validation using Mistral-based models.
 Core idea is to regularly check for data-drift (whatever that means)
 
+as a data example I took [coffeshop daily transactions data from kaggle](https://www.kaggle.com/datasets/agungpambudi/trends-product-coffee-shop-sales-revenue-dataset)
 ---
 
 ## Table of Contents
