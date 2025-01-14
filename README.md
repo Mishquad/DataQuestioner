@@ -1,7 +1,8 @@
 # DataQuestioner
 
 
-A modular system for automated business data analysis, hypothesis generation, and validation using Mistral-based LLMs. This repository is structured for scalability and ease of use, providing tools for local deployment, CI/CD, and output generation in various formats.
+LLM-based system for automated business data analysis, hypothesis generation, and validation using Mistral-based models.
+Core idea is to regularly check for data-drift (whatever that means)
 
 ---
 
@@ -69,3 +70,20 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 - Running tests using pytest
 - Linting the code with flake8
 - Deploying the application (if configured)
+
+### Diagrams
+---
+![user](./imgs/user_story.png)
+---
+![comp](./imgs/components.png)
+
+
+### Examples
+![UI](./imgs/ui.png)
+---
+![first](./imgs/agents1.png)
+---
+![second](./imgs/agents2.png)
+
+### Author
+Mikhail Ivanov
