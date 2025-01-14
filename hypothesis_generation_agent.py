@@ -1,44 +1,33 @@
-import pandas as pd
 from mistral_client import MistralWrapper
 
-def generate_hypotheses(discrepancies):
-    """
-    Generates hypotheses and suggestions based on discrepancies.
-    """
-    hypotheses = []
-    suggestions = []
+def generate_hypotheses_with_mistral(mistral_wrapper):
+    # Read the analysis results from the pre-defined file
+    try:
+        with open("analysis_results.txt", "r") as file:
+            analysis_results = file.read()
+    except FileNotFoundError:
+        raise ValueError("The analysis_results.txt file was not found. Ensure the Data Analysis Agent has run successfully.")
 
-    for column in discrepancies.columns.levels[0]:
-        for index in discrepancies.index:
-            if discrepancies[column].loc[index].isna().any():
-                hypotheses.append(f"Data discrepancy found in column '{column}' at index {index}.")
-                suggestions.append(f"Investigate the data in column '{column}' at index {index} for potential issues.")
+    if not analysis_results.strip():
+        raise ValueError("No analysis results found in analysis_results.txt.")
 
-    return hypotheses, suggestions
+    prompt = (
+        "You are a hypothesis generator. Based on the following discrepancies, generate hypotheses and suggestions:\n\n"
+        f"{analysis_results}\n\n"
+        "Provide hypotheses and suggestions in two separate sections: Hypotheses and Suggestions."
+    )
+    hypothesis_result = mistral_wrapper.generate_completion(prompt)
 
-if __name__ == "__main__":
-    import argparse
+    # Split and save hypotheses and suggestions
+    if "Suggestions:" in hypothesis_result:
+        hypotheses, suggestions = hypothesis_result.split("Suggestions:")
+    else:
+        hypotheses = hypothesis_result
+        suggestions = ""
 
-    parser = argparse.ArgumentParser(description="Generate hypotheses based on discrepancies and send to Mistral.")
-    parser.add_argument("--discrepancies", required=True, help="Path to the discrepancies CSV file.")
-    parser.add_argument("--mistral-endpoint", required=True, help="Mistral API endpoint for sending hypotheses.")
+    with open("hypotheses.txt", "w") as hypo_file:
+        hypo_file.write(hypotheses)
+    with open("suggestions.txt", "w") as sugg_file:
+        sugg_file.write(suggestions)
     
-    args = parser.parse_args()
-
-    discrepancies = pd.read_csv(args.discrepancies)
-    hypotheses, suggestions = generate_hypotheses(discrepancies)
-
-    print("Generated Hypotheses:")
-    for hypothesis in hypotheses:
-        print(hypothesis)
-
-    print("\nSuggestions:")
-    for suggestion in suggestions:
-        print(suggestion)
-
-    # Send hypotheses and suggestions to Mistral
-    mistral = MistralWrapper()
-    response = mistral.send_data({"hypotheses": hypotheses, "suggestions": suggestions}, args.mistral_endpoint)
-
-    print("Response from Mistral:")
-    print(response)
+    return hypotheses, suggestions

@@ -1,41 +1,22 @@
 import pandas as pd
 from mistral_client import MistralWrapper
 
-def analyze_and_send_to_mistral(base_data_path, current_data_path):
-    from data_analysis_agent import analyze_data
+from fpdf import FPDF
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-    discrepancies = analyze_data(base_data_path, current_data_path)
-
-    mistral = MistralWrapper()
-    response = mistral.send_data({"discrepancies": discrepancies.to_dict()}, "/analyze_data")
-
-    print("Response from Mistral:")
-    print(response)
-
-
-def analyze_data(base_data_path, current_data_path):
-    """
-    Compares two CSV datasets and returns discrepancies.
-    """
-    base_data = pd.read_csv(base_data_path)
-    current_data = pd.read_csv(current_data_path)
-    discrepancies = base_data.compare(current_data)
-    return discrepancies
-
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser(description="Analyze discrepancies between two CSV datasets.")
-    parser.add_argument("--base", required=True, help="Path to the base data CSV file.")
-    parser.add_argument("--current", required=True, help="Path to the current data CSV file.")
-    parser.add_argument("--output", help="Path to save discrepancies as a CSV file.", default=None)
-
-    args = parser.parse_args()
-
-    discrepancies = analyze_data(args.base, args.current)
-    print("Discrepancies found:")
-    print(discrepancies)
-
-    if args.output:
-        discrepancies.to_csv(args.output)
-        print(f"Discrepancies saved to {args.output}.")
+def analyze_data_with_mistral(base_data_path, current_data_path, mistral_wrapper):
+    prompt = (
+        "You are a data analyst. Compare the following datasets and summarize discrepancies, including NaNs, patterns, "
+        "and irregular values:\n\n"
+        f"Base Data Path: {base_data_path}\nCurrent Data Path: {current_data_path}\n\n"
+        "You can make all permutations with data. But no python code for output allowed!"
+        "Provide a summary of discrepancies as plain text. Make sure column names are displayed correctly."
+    )
+    analysis_result = mistral_wrapper.generate_completion(prompt)
+    
+    # Save output to a text file
+    with open("analysis_results.txt", "w") as file:
+        file.write(analysis_result or "No discrepancies found.")
+    
+    return analysis_result

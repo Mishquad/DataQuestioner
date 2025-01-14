@@ -16,15 +16,21 @@ class MistralWrapper:
             raise Exception(f"Request failed: {response.status_code} - {response.text}")
         return response.json()
 
-    def generate_completion(self, model, prompt, suffix, temperature=0, top_p=1):
-        """Generate a completion using Mistral's FIM API."""
-        response = self.client.fim.complete(
-            model=model,
-            prompt=prompt,
-            suffix=suffix,
-            temperature=temperature,
-            top_p=top_p,
-        )
+    def generate_completion(self, prompt, suffix="", model="codestral-latest", temperature=0.1, top_p=1):
+        try:
+            response = self.client.fim.complete(
+                model=model,
+                prompt=prompt,
+                suffix=suffix,
+                temperature=temperature,
+                top_p=top_p,
+            )
+            if response and response.choices:
+                return response.choices[0].message.content
+            return None
+        except Exception as e:
+            print(f"Error generating completion: {e}")
+            return None
 
     def _load_credentials(self):
         """

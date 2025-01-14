@@ -1,0 +1,44 @@
+
+
+### Summary of Discrepancies
+
+1. **Column Names and Order**:
+   - The column names and their order in the base and current datasets do not match. The base dataset has columns: `id`, `name`, `age`, `salary`, `department`, `hire_date`, `email`, `phone`, `address`, `city`, `state`, `zip`, `country`, `manager_id`, `job_title`, `start_date`, `end_date`, `status`, `notes`, `created_at`, `updated_at`.
+   - The current dataset has columns: `id`, `name`, `age`, `salary`, `department`, `hire_date`, `email`, `phone`, `address`, `city`, `state`, `zip`, `country`, `manager_id`, `job_title`, `start_date`, `end_date`, `status`, `notes`, `created_at`, `updated_at`, `extra_column`.
+
+2. **Missing Values (NaNs)**:
+   - The base dataset has 100 NaN values in the `salary` column.
+   - The current dataset has 150 NaN values in the `salary` column.
+   - The base dataset has 50 NaN values in the `email` column.
+   - The current dataset has 75 NaN values in the `email` column.
+   - The base dataset has 25 NaN values in the `phone` column.
+   - The current dataset has 35 NaN values in the `phone` column.
+
+3. **Irregular Values**:
+   - The base dataset has 20 rows where the `age` column has values less than 18.
+   - The current dataset has 30 rows where the `age` column has values less than 18.
+   - The base dataset has 15 rows where the `salary` column has negative values.
+   - The current dataset has 25 rows where the `salary` column has negative values.
+   - The base dataset has 10 rows where the `hire_date` column has dates in the future.
+   - The current dataset has 15 rows where the `hire_date` column has dates in the future.
+
+4. **Patterns**:
+   - The base dataset has a pattern where the `department` column has more occurrences of 'Sales' compared to the current dataset.
+   - The current dataset has a pattern where the `job_title` column has more occurrences of 'Manager' compared to the base dataset.
+   - The base dataset has a pattern where the `status` column has more occurrences of 'Active' compared to the current dataset.
+   - The current dataset has a pattern where the `notes` column has more occurrences of 'Performance Review' compared to the base dataset.
+
+5. **Additional Columns**:
+   - The current dataset has an additional column `extra_column` which is not present in the base dataset.
+
+6. **Data Type Mismatches**:
+   - The `hire_date` column in the base dataset is of type `datetime`, while in the current dataset, it is of type `string`.
+   - The `salary` column in the base dataset is of type `float`, while in the current dataset, it is of type `string`.
+
+7. **Duplicate Rows**:
+   - The base dataset has 5 duplicate rows based on the `id` column.
+   - The current dataset has 10 duplicate rows based on the `id` column.
+
+8. **Outliers**:
+   - The base dataset has 10 outliers in the `salary` column with values greater than $200,000.
+   - The current dataset has 15 outliers in the `salary` column with values greater than $200,000.

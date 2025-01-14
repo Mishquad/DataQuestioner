@@ -1,0 +1,4 @@
+flask
+pandas
+mistral
+pytest

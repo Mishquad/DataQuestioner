@@ -1,33 +1,30 @@
 from mistral_client import MistralWrapper
 
-def validate_hypotheses(hypotheses):
-    """
-    Validates hypotheses by appending a 'Validated' tag.
-    """
-    validated_hypotheses = [f"{hypothesis} - Validated" for hypothesis in hypotheses]
-    return validated_hypotheses
+def validate_hypotheses_with_mistral(mistral_wrapper):
+    # Read the hypotheses from the pre-defined file
+    try:
+        with open("hypotheses.txt", "r") as file:
+            hypotheses = file.readlines()
+    except FileNotFoundError:
+        raise ValueError("The hypotheses.txt file was not found. Ensure the Hypothesis Generation Agent has run successfully.")
 
-if __name__ == "__main__":
-    import argparse
+    if not hypotheses:
+        raise ValueError("No hypotheses found in hypotheses.txt.")
 
-    parser = argparse.ArgumentParser(description="Validate hypotheses and send to Mistral.")
-    parser.add_argument("--input", required=True, help="Path to the file containing hypotheses (one per line).")
-    parser.add_argument("--mistral-endpoint", required=True, help="Mistral API endpoint for sending validated hypotheses.")
+    prompt = (
+        "You are a validation expert. Validate the following hypotheses and provide explanations:\n\n"
+        f"{''.join(hypotheses)}\n\n"
+        "Provide validated hypotheses with explanations."
+    )
+    validation_result = mistral_wrapper.generate_completion(prompt)
+
+    # Save validated hypotheses
+    with open("validated_hypotheses.txt", "w") as file:
+        file.write(validation_result)
     
-    args = parser.parse_args()
+    return validation_result
 
-    with open(args.input, "r") as f:
-        hypotheses = [line.strip() for line in f.readlines()]
 
-    validated_hypotheses = validate_hypotheses(hypotheses)
 
-    print("Validated Hypotheses:")
-    for hypothesis in validated_hypotheses:
-        print(hypothesis)
 
-    # Send validated hypotheses to Mistral
-    mistral = MistralWrapper()
-    response = mistral.send_data({"validated_hypotheses": validated_hypotheses}, args.mistral_endpoint)
 
-    print("Response from Mistral:")
-    print(response)
