@@ -50,9 +50,17 @@ A modular system for automated business data analysis, hypothesis generation, an
    git clone https://github.com/yourusername/your-repository.git
    cd your-repository
 
-2. install dependecies
+2. Install dependecies
 ```python pip install -r requirements.txt```
 
-3. set up Mistral API
+3. Set up Mistral API
 ```MISTRAL_API_KEY=your_api_key```
 
+4. Run the orchestrator
+   ```python orchestrator.py --base data_examples/base.csv --current data_examples/current.csv```
+
+6. Start Flask server
+   ``python app.py``
+7. Open http://127.0.0.1:5000 in your browser.
+
+   
