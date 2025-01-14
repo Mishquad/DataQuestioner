@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analysis Agent</title>
+    <title>Data Workflow</title>
 </head>
 <body>
-    <h1>Upload CSV Files</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="base_data">Base Data CSV:</label>
-        <input type="file" id="base_data" name="base_data" accept=".csv" required><br><br>
-        <label for="current_data">Current Data CSV:</label>
-        <input type="file" id="current_data" name="current_data" accept=".csv" required><br><br>
-        <input type="submit" value="Analyze">
+    <h1>Upload Data Files</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label>Base Data CSV:</label>
+        <input type="file" name="base_data" required><br><br>
+        <label>Current Data CSV:</label>
+        <input type="file" name="current_data" required><br><br>
+        <label>Mistral API Key:</label>
+        <input type="text" name="mistral_api_key" required><br><br>
+        <button type="submit">Run Workflow</button>
     </form>
 </body>
 </html>
