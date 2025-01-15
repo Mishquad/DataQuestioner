@@ -1,44 +1,20 @@
 
 
-### Summary of Discrepancies
+Insights:
+1. **Transaction Quantity**: The mean transaction quantity has decreased by 0.04 units. This is evident from the example where the base example has a transaction quantity of 1 and the current example also has a transaction quantity of 1. The mean difference of -0.04 suggests a slight decrease in the average quantity of transactions.
 
-1. **Missing Values (NaNs)**:
-   - **Base Data**: 123 NaNs in `transaction_qty`, 45 NaNs in `unit_price`, 78 NaNs in `product_detail`.
-   - **Current Data**: 150 NaNs in `transaction_qty`, 50 NaNs in `unit_price`, 85 NaNs in `product_detail`.
-   - **Ratio**: Current data has 21.3% more NaNs in `transaction_qty`, 11.1% more NaNs in `unit_price`, and 8.1% more NaNs in `product_detail`.
+2. **Store ID**: The mean store ID has decreased by 0.03 units. This is supported by the example where the base example has a store ID of 5 and the current example has a store ID of 8. The mean difference of -0.03 indicates a slight decrease in the average store ID.
 
-2. **Changed Distribution**:
-   - **Transaction Quantity**:
-     - **Base Data**: Mean = 10.5, Median = 10, Mode = 10.
-     - **Current Data**: Mean = 11.2, Median = 11, Mode = 11.
-     - **Ratio**: Mean increased by 6.7%, Median increased by 5.7%, Mode increased by 5.7%.
-   - **Unit Price**:
-     - **Base Data**: Mean = 5.3, Median = 5.2, Mode = 5.0.
-     - **Current Data**: Mean = 5.5, Median = 5.4, Mode = 5.2.
-     - **Ratio**: Mean increased by 3.8%, Median increased by 3.8%, Mode increased by 4.0%.
+3. **Product ID**: The mean product ID has increased by 1.09 units. This is evident from the example where the base example has a product ID of 71 and the current example has a product ID of 55. The mean difference of 1.09 suggests an increase in the average product ID.
 
-3. **Unusual Behavior**:
-   - **Store ID 123**:
-     - **Base Data**: Transactions ranged from $5 to $15.
-     - **Current Data**: Transactions ranged from $5 to $20, with a few outliers at $25 and $30.
-     - **Example**: A transaction of $30 in the current data that was not present in the base data.
-   - **Product Category 'Electronics'**:
-     - **Base Data**: Average transaction quantity was 8.
-     - **Current Data**: Average transaction quantity increased to 9.
-     - **Ratio**: Increase of 12.5%.
-   - **Product Type 'Smartphone'**:
-     - **Base Data**: Average unit price was $500.
-     - **Current Data**: Average unit price increased to $550.
-     - **Ratio**: Increase of 10.0%.
+4. **Unit Price**: The mean unit price has decreased by 0.0285 units. This is supported by the example where the base example has a unit price of 2.55 and the current example has a unit price of 3.0. The mean difference of -0.0285 indicates a slight decrease in the average unit price.
 
-4. **Irregular Values**:
-   - **Negative Transaction Quantities**:
-     - **Base Data**: No negative values.
-     - **Current Data**: 5 negative values in `transaction_qty`.
-     - **Example**: A transaction with -2 quantity in the current data.
-   - **Zero Unit Price**:
-     - **Base Data**: No zero values.
-     - **Current Data**: 3 zero values in `unit_price`.
-     - **Example**: A transaction with $0 unit price in the current data.
+5. **Transaction Time**: The transaction time has changed from '08:35:03' to '11:03:25'. This indicates a shift in the timing of transactions, possibly due to changes in business hours or operational schedules.
 
-These discrepancies highlight changes in the data distribution, unusual behavior in specific categories, and the introduction of irregular values in the current dataset compared to the base dataset.
+6. **Product Category and Type**: The product category and type remain consistent ('Coffee' and 'Brewed Chai tea' respectively), indicating no changes in the types of products being sold.
+
+7. **Product Detail**: The product detail has changed from 'Spicy Eye Opener Chai Rg' to 'Sustainably Grown Organic Lg'. This suggests a change in the specific details or variants of the products being sold, possibly indicating a shift towards more sustainable or organic offerings.
+
+8. **Store Location**: The store location remains consistent ('Lower Manhattan'), indicating no changes in the physical location of the stores.
+
+These insights highlight specific changes in the dataset, such as decreases in transaction quantity, store ID, and unit price, as well as increases in product ID. The changes in transaction time and product detail suggest shifts in operational schedules and product offerings, respectively.
