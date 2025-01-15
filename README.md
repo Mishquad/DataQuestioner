@@ -81,7 +81,7 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 ![user](./imgs/user_story.png)
 
 ---
-![comp](./imgs/components.png)
+![comp](./imgs/comps1.png)
 
 
 ### Examples
