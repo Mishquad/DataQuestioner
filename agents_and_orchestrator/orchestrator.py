@@ -1,5 +1,5 @@
 from mistral_client import MistralWrapper
-from data_analysis_agent import analyze_data_with_mistral
+from data_analysis_agent import analyze_data_with_rag
 from hypothesis_generation_agent import generate_hypotheses_with_mistral
 from hypothesis_validation_agent import validate_hypotheses_with_mistral
 from save_pdf import generate_pdf
@@ -10,7 +10,7 @@ def orchestrate(base_data_path, current_data_path, api_key):
 
     try:
         # Step 1: Data Analysis
-        discrepancies_summary = analyze_data_with_mistral(base_data_path, current_data_path, mistral)
+        discrepancies_summary = analyze_data_with_rag(base_data_path, current_data_path, mistral)
         print("Analysis Summary:\n", discrepancies_summary)
 
         # Save analysis results to a file for later use

@@ -20,6 +20,9 @@ def validate_hypotheses_with_mistral(mistral_wrapper):
         "Your answer should be based on the fact that generated hypotheses match the actual result of data analysis"
         f"{''.join(analysis)}\n\n"
         #"Provide your answer in plain text."
+        "You also should give the advice what to do next."
+        "It is mandatory to doubt each hypotheses if it is simply incorrect considering what is given in data analysis."
+        "But Your ideas must limit only to provided data."
     )
     validation_result = mistral_wrapper.generate_completion(prompt)
 
