@@ -88,10 +88,10 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 ![UI](./imgs/ui.png)
 
 ---
-![first](./imgs/agents1.png)
+![first](./imgs/agents11.png)
 
 ---
-![second](./imgs/agents2.png)
+![second](./imgs/agents22.png)
 
 ### Author
 Mikhail Ivanov
