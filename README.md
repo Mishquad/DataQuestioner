@@ -74,7 +74,7 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 
 - Running tests using pytest
 - Linting the code with flake8
-- Deploying the application (if configured)
+- Deploying the application
 
 ### Diagrams
 ---
