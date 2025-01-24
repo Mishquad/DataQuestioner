@@ -15,8 +15,9 @@ as a data example I took [coffeshop daily transactions data from kaggle](https:/
 3. Usage
 4. CI/CD Pipeline
 5. Diagrams (user-story and architecture)
-6. Examples of input / output
-7. Author
+6. Workflow
+7. Examples of input / output
+8. Author
 
 ---
 
@@ -82,6 +83,16 @@ The repository uses GitHub Actions for continuous integration and deployment. Th
 
 ---
 ![comp](./imgs/comps1.png)
+
+### Workflow:
+- user inserts two .csv tables, enters API code (Codestral in this case)
+- Orchestrator launches 3 agents:
+  - Data analysis agent performs analysis based on methodology (datasets are RAG-like preprocessed : convert into dataframe, calculate descriptive statistics, transfer to LLM as aggregated string.
+  - Hypothesis generation agent: this agent looks at results of previous agents, suggests what could be checked with such discrepancies
+  - Validation agent: looks at two previous outputs, validates hypotheses against actual data analysis result, leaves out irrelevant hypotheses
+- Result is displayed in text via Flask and saved into single .pdf
+- Optional: data anonymization
+- Optional: scheduling pipeline via Airflow with regular checking
 
 
 ### Examples
